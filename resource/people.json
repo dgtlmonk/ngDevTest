@@ -1,0 +1,27 @@
+[
+  {
+    "name": "John McCormick",
+    "email": "jm@aol.com",
+    "address": "580 Albany Avenue, Sanford, California, 1588"
+  },
+  {
+    "name": "Dean Cain",
+    "email": "dc@aol.com",
+    "address": "532 Amity Street, Libertytown, Arizona, 1958"
+  },
+  {
+    "name": "Sean Cain",
+    "email": "sc@aol.com",
+    "address": "7582 Broad Circle, Fickle Hill, Utah,"
+  },
+  {
+    "name": "Sally Forth",
+    "email": "sf@aol.com",
+    "address": "731 Bowery Street, Chesterfield, American Samoa, 4309"
+  },
+  {
+    "name": "Ben Mcbride",
+    "email": "bm@aol.com",
+    "address": "7582 Broad Circle, Fickle Hill, Utah"
+  }
+]

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Test</title>
+    <link type="text/css" rel="stylesheet" href="vendor/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="col s12" ui-view>
+    </div>
+</div>
+
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/ui-router/release/angular-ui-router.min.js"></script>
+<!-- invert angular + ui-router position -->
+
+<script src="vendor/materialize/dist/js/materialize.min.js"></script>
+<script src="src/app.js"></script>
+<script src="src/resource.js"></script>
+
+<script>
+    angular.bootstrap(document, ['app']);
+</script>
+
+</body>
+</html>

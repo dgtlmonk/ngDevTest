@@ -1,0 +1,23 @@
+{
+  "name": "ngTest",
+  "version": "0.0.1",
+  "authors": [
+    "joel@worketc.com"
+  ],
+  "description": "WorkETC Angular Dev Test",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "materialize": "~0.95.3",
+    "ui-router": "~0.2.13"
+  }
+}
