@@ -1,14 +1,18 @@
 (function (module) {
     'use strict';
 
- module.config(function ($stateProvider) {
+ module.config(function ($stateProvider, $urlRouterProvider) {
 
+     $urlRouterProvider.otherwise('/')
      $stateProvider
          .state('create',{
              url:'/',
              templateUrl:'view/people-edit.html',
              controller:'app.controller',
-             controllerAs:'vm'
+             controllerAs:'vm',
+             resolve: {
+                 // you may resolve
+             }
          })
          .state('list',{
              url:'/list',
