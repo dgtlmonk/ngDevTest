@@ -4,4 +4,4 @@
 - Enable Adding of people @ #/
 - Enable listing of people @ #/list
 
-`bower install`
+`$ bower install`
