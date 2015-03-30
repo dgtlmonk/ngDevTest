@@ -7,7 +7,7 @@ Angular Dev Test
 ## Requirement(s) ##
 - Load people list from people.json
 - Enable Adding of people @ #/
-- Display error if name already exist when adding new entryg
+- Display error if name already exist when adding new entry
 - Enable listing of people @ #/list
 
 
