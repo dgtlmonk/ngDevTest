@@ -19,10 +19,10 @@
             </thead>
 
             <tbody>
-            <tr>
-                <td>name --</td>
-                <td>email --</td>
-                <td>address--</td>
+             <tr ng-repeat="person in people">
+                <td>{{person.name}}</td>
+                <td>{{person.email}}</td>
+                <td>{{person.address}}</td>
             </tr>
             </tbody>
         </table>

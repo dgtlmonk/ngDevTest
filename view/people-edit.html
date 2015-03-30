@@ -1,6 +1,8 @@
 <div class="row">
     <div class="row error white-text red">
-        <div class="col">SOMETHING WENT WRONG MESSAGE </div>
+        <div class="col" ng-show="nameExists">Sorry your name is already in our database. Please enter a different name.</div>
+        <div class="col" ng-show="personForm.name.$invalid && personForm.name.$dirty">Please enter a name.</div>
+        <div class="col" ng-show="personForm.email.$invalid && personForm.email.$dirty">Please enter a valid email.</div>
     </div>
 
     <!-- header -->
@@ -11,27 +13,28 @@
   </div>
 
     <!-- form -->
-  <div class="row">
-    <div class="col s12">
-        <div class="input-field col s3">
-            <input id="name" type="text">
-            <label for="name">Name</label>
+    <form novalidate name="personForm">
+      <div class="row">
+        <div class="col s12">
+            <div class="input-field col s3">
+                <input id="name" type="text" name="name" ng-model="personData.name" required >
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field col s3">
+                <input id="email" type="text" name="email" ng-model="personData.email" required email>
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="address" type="text" name="address" ng-model="personData.address">
+                <label for="address">Address</label>
+            </div>
         </div>
-        <div class="input-field col s3">
-            <input id="email" type="text">
-            <label for="email">E-mail</label>
+        <div class="col">
+            <a class="btn" ng-click="addPerson()" ng-disabled="!personForm.$valid">Add Person</a>
+            <a class="btn" ng-click="clearForm()">Cancel</a>
         </div>
-        <div class="input-field col s6">
-            <input id="address" type="text">
-            <label for="address">Address</label>
-        </div>
-    </div>
-    <div class="col">
-        <a class="btn">Add Person</a>
-        <a class="btn">Cancel</a>
-    </div>
-
-  </div>
+      </div>
+    </form>
 
     <!-- table -->
   <div class="row">
@@ -45,10 +48,10 @@
             </thead>
 
             <tbody>
-            <tr>
-                <td>name --</td>
-                <td>email --</td>
-                <td>address--</td>
+            <tr ng-repeat="person in people">
+                <td>{{person.name}}</td>
+                <td>{{person.email}}</td>
+                <td>{{person.address}}</td>
             </tr>
             </tbody>
         </table>
